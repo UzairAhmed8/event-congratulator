@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Event Congratulator</title>
+</head>
+
+<body>
+    <div class="parent-con">
+
+        <div class="section-1">
+            <h1>Event Congratulator</h1>
+        </div>
+
+        <div class="section-2">
+            <div class="sec-2-btns">
+                <button onclick="birthdayCardinp()">Create Birthday Card</button>
+                <button>Anniversary Card</button>
+            </div>
+            <div class="sec-2-inps">
+                <div id="inputBox">
+                    <input type="text" id="name" placeholder="Enter Name">
+                    <input type="date" id="dob">
+                    <button onclick="createCard()">Next</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="card" style="display:none;">
+            <div class="img"></div>
+            <div class="card-paras">
+                <h2 id="cardGreeting"></h2>
+                <p id="cardDate"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
